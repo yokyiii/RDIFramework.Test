@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDIFramework.Test", "RDIFramework.Test.csproj", "{2C6DDB96-BCB6-4E71-9692-34E09B685478}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C6DDB96-BCB6-4E71-9692-34E09B685478}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{2C6DDB96-BCB6-4E71-9692-34E09B685478}.Debug|x86.ActiveCfg = Debug|x86
+		{2C6DDB96-BCB6-4E71-9692-34E09B685478}.Debug|x86.Build.0 = Debug|x86
+		{2C6DDB96-BCB6-4E71-9692-34E09B685478}.Release|Any CPU.ActiveCfg = Release|x86
+		{2C6DDB96-BCB6-4E71-9692-34E09B685478}.Release|x86.ActiveCfg = Release|x86
+		{2C6DDB96-BCB6-4E71-9692-34E09B685478}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4498F8F-009D-4FB3-9B8B-49D57B2C768A}
+	EndGlobalSection
+EndGlobal

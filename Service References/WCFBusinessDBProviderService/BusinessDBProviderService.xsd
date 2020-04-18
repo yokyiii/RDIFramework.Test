@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RDIFramework.Utilities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RDIFramework.Utilities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="UserInfo">
+    <xs:sequence>
+      <xs:element name="_x003C_Code_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CompanyCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CompanyId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CompanyName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CurrentLanguage_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DepartmentCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DepartmentId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DepartmentName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IPAddress_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Id_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IsAdministrator_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_LastVisit_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_MACAddress_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_OpenId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Password_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ProcessId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ProcessName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_RealName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_RoleId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_RoleName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SecurityLevel_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_ServicePassword_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ServiceUserName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_StaffId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SubCompanyCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SubCompanyId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_SubCompanyName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_TargetUserId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Themes_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_UserName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_WorkgroupCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_WorkgroupId_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_WorkgroupName_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserInfo" nillable="true" type="tns:UserInfo" />
+</xs:schema>

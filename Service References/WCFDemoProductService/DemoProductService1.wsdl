@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DemoProductService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8097/DemoProductService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8097/DemoProductService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8097/DemoProductService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/RDIFramework.Utilities" />
+      <xsd:import schemaLocation="http://localhost:8097/DemoProductService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/RDIFrameworkDemo.BizLogic" />
+      <xsd:import schemaLocation="http://localhost:8097/DemoProductService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/RDIFramework.BizLogic" />
+      <xsd:import schemaLocation="http://localhost:8097/DemoProductService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://localhost:8097/DemoProductService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:8097/DemoProductService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDemoProductService_Add_InputMessage">
+    <wsdl:part name="parameters" element="tns:Add" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_Add_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_GetDT_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDT" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_GetDT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_GetDTByPage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDTByPage" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_GetDTByPage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDTByPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_GetEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntity" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_GetEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_GetDTByIds_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDTByIds" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_GetDTByIds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDTByIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_GetDTByValues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDTByValues" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_GetDTByValues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDTByValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_BatchSave_InputMessage">
+    <wsdl:part name="parameters" element="tns:BatchSave" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_BatchSave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BatchSaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_BatchDelete_InputMessage">
+    <wsdl:part name="parameters" element="tns:BatchDelete" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_BatchDelete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BatchDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_SetDeleted_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDeleted" />
+  </wsdl:message>
+  <wsdl:message name="IDemoProductService_SetDeleted_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDeletedResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDemoProductService">
+    <wsdl:operation name="Add">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoProductService/Add" message="tns:IDemoProductService_Add_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoProductService/AddResponse" message="tns:IDemoProductService_Add_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoProductService/Update" message="tns:IDemoProductService_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoProductService/UpdateResponse" message="tns:IDemoProductService_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoProductService/GetDT" message="tns:IDemoProductService_GetDT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoProductService/GetDTResponse" message="tns:IDemoProductService_GetDT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDTByPage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoProductService/GetDTByPage" message="tns:IDemoProductService_GetDTByPage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoProductService/GetDTByPageResponse" message="tns:IDemoProductService_GetDTByPage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoProductService/GetEntity" message="tns:IDemoProductService_GetEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoProductService/GetEntityResponse" message="tns:IDemoProductService_GetEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDTByIds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoProductService/GetDTByIds" message="tns:IDemoProductService_GetDTByIds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoProductService/GetDTByIdsResponse" message="tns:IDemoProductService_GetDTByIds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDTByValues">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoProductService/GetDTByValues" message="tns:IDemoProductService_GetDTByValues_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoProductService/GetDTByValuesResponse" message="tns:IDemoProductService_GetDTByValues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BatchSave">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoProductService/BatchSave" message="tns:IDemoProductService_BatchSave_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoProductService/BatchSaveResponse" message="tns:IDemoProductService_BatchSave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoProductService/Delete" message="tns:IDemoProductService_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoProductService/DeleteResponse" message="tns:IDemoProductService_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BatchDelete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoProductService/BatchDelete" message="tns:IDemoProductService_BatchDelete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoProductService/BatchDeleteResponse" message="tns:IDemoProductService_BatchDelete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDeleted">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoProductService/SetDeleted" message="tns:IDemoProductService_SetDeleted_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoProductService/SetDeletedResponse" message="tns:IDemoProductService_SetDeleted_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDemoProductService" type="tns:IDemoProductService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="http://tempuri.org/IDemoProductService/Add" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap:operation soapAction="http://tempuri.org/IDemoProductService/Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDT">
+      <soap:operation soapAction="http://tempuri.org/IDemoProductService/GetDT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDTByPage">
+      <soap:operation soapAction="http://tempuri.org/IDemoProductService/GetDTByPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntity">
+      <soap:operation soapAction="http://tempuri.org/IDemoProductService/GetEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDTByIds">
+      <soap:operation soapAction="http://tempuri.org/IDemoProductService/GetDTByIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDTByValues">
+      <soap:operation soapAction="http://tempuri.org/IDemoProductService/GetDTByValues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BatchSave">
+      <soap:operation soapAction="http://tempuri.org/IDemoProductService/BatchSave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/IDemoProductService/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BatchDelete">
+      <soap:operation soapAction="http://tempuri.org/IDemoProductService/BatchDelete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDeleted">
+      <soap:operation soapAction="http://tempuri.org/IDemoProductService/SetDeleted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DemoProductService">
+    <wsdl:port name="BasicHttpBinding_IDemoProductService" binding="tns:BasicHttpBinding_IDemoProductService">
+      <soap:address location="http://localhost:8097/DemoProductService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

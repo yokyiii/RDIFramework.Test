@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C6DDB96-BCB6-4E71-9692-34E09B685478}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RDIFramework.Test</RootNamespace>
+    <AssemblyName>RDIFramework.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>http://localhost/RDIFramework.Test/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>ref\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v16.1">
+      <HintPath>ref\DevExpress.BonusSkins.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v16.1.Core">
+      <HintPath>ref\DevExpress.Charts.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v16.1">
+      <HintPath>ref\DevExpress.CodeParser.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>ref\DevExpress.Data.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v16.1">
+      <HintPath>ref\DevExpress.DataAccess.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v16.1.UI">
+      <HintPath>ref\DevExpress.DataAccess.v16.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v16.1.Core">
+      <HintPath>ref\DevExpress.Diagram.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <HintPath>ref\DevExpress.Office.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>ref\DevExpress.Pdf.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v16.1.Drawing">
+      <HintPath>ref\DevExpress.Pdf.v16.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core">
+      <HintPath>ref\DevExpress.PivotGrid.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>ref\DevExpress.Printing.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <HintPath>ref\DevExpress.RichEdit.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <HintPath>ref\DevExpress.Sparkline.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>ref\DevExpress.Utils.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1.UI">
+      <HintPath>ref\DevExpress.Utils.v16.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v16.1">
+      <HintPath>ref\DevExpress.Xpo.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>ref\DevExpress.XtraBars.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1">
+      <HintPath>ref\DevExpress.XtraCharts.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1.Extensions">
+      <HintPath>ref\DevExpress.XtraCharts.v16.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1.UI">
+      <HintPath>ref\DevExpress.XtraCharts.v16.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard">
+      <HintPath>ref\DevExpress.XtraCharts.v16.1.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v16.1">
+      <HintPath>ref\DevExpress.XtraDiagram.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>ref\DevExpress.XtraEditors.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core">
+      <HintPath>ref\DevExpress.XtraGauges.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\DevExpress.XtraGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>ref\DevExpress.XtraLayout.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v16.1">
+      <HintPath>ref\DevExpress.XtraNavBar.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v16.1">
+      <HintPath>ref\DevExpress.XtraPivotGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>ref\DevExpress.XtraPrinting.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v16.1">
+      <HintPath>ref\DevExpress.XtraReports.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions">
+      <HintPath>ref\DevExpress.XtraReports.v16.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>ref\DevExpress.XtraRichEdit.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v16.1">
+      <HintPath>ref\DevExpress.XtraScheduler.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core">
+      <HintPath>ref\DevExpress.XtraScheduler.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Reporting">
+      <HintPath>ref\DevExpress.XtraScheduler.v16.1.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Reporting.Extensions">
+      <HintPath>ref\DevExpress.XtraScheduler.v16.1.Reporting.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>ref\DevExpress.XtraTreeList.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v16.1">
+      <HintPath>ref\DevExpress.XtraVerticalGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>References\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>ref\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="RDIFramework.BizLogic, Version=3.3.7393.31277, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\RDIFramework.BizLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="RDIFramework.Cache">
+      <HintPath>ref\RDIFramework.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="RDIFramework.Cache.Factory">
+      <HintPath>ref\RDIFramework.Cache.Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="RDIFramework.Cache.Redis">
+      <HintPath>ref\RDIFramework.Cache.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="RDIFramework.Controls, Version=3.3.7393.31278, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\RDIFramework.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="RDIFramework.ServiceCaller, Version=3.3.7393.31279, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\RDIFramework.ServiceCaller.dll</HintPath>
+    </Reference>
+    <Reference Include="RDIFramework.Utilities, Version=3.3.7393.31150, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\RDIFramework.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="RDIFramework.WinForm.Utilities, Version=3.3.7393.31280, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\RDIFramework.WinForm.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="RDIFrameworkDemo.BizLogic, Version=3.3.7393.30622, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\RDIFrameworkDemo.BizLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\InterrogationEntity.cs" />
+    <Compile Include="Business\InterrogationManager.cs" />
+    <Compile Include="Business\InterrogationTable.cs" />
+    <Compile Include="Business\SchoolEntity.cs" />
+    <Compile Include="Business\SchoolManager.cs" />
+    <Compile Include="Business\SchoolTable.cs" />
+    <Compile Include="DemoProduct\FrmDemoProductAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoProduct\FrmDemoProductAdmin.Designer.cs">
+      <DependentUpon>FrmDemoProductAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoProduct\FrmDemoProductEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoProduct\FrmDemoProductEdit.Designer.cs">
+      <DependentUpon>FrmDemoProductEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHospitalAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHospitalAdmin.Designer.cs">
+      <DependentUpon>frmHospitalAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interrogation\FrmInterrogationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interrogation\FrmInterrogationEdit.Designer.cs">
+      <DependentUpon>FrmInterrogationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolDemo\FrmSchoolAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolDemo\FrmSchoolAdmin.Designer.cs">
+      <DependentUpon>FrmSchoolAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolDemo\FrmSchoolEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolDemo\FrmSchoolEdit.Designer.cs">
+      <DependentUpon>FrmSchoolEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderAdmin\FrmEditOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderAdmin\FrmEditOrder.Designer.cs">
+      <DependentUpon>FrmEditOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderAdmin\FrmOrderAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderAdmin\FrmOrderAdmin.Designer.cs">
+      <DependentUpon>FrmOrderAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCFBusinessDBProviderService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCFDemoProductService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Test\FrmFormBindingTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\FrmFormBindingTest.Designer.cs">
+      <DependentUpon>FrmFormBindingTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\ExportExcelTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\ExportExcelTest.Designer.cs">
+      <DependentUpon>ExportExcelTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTest.designer.cs">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ReportCommonTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\ReportCommonTool.designer.cs">
+      <DependentUpon>ReportCommonTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\FrmTestDgvSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\FrmTestDgvSummary.Designer.cs">
+      <DependentUpon>FrmTestDgvSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\FrmTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\FrmTestForm.Designer.cs">
+      <DependentUpon>FrmTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FrmProductSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FrmProductSearch.Designer.cs">
+      <DependentUpon>FrmProductSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FrmProductEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FrmProductEdit.Designer.cs">
+      <DependentUpon>FrmProductEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FrmProductAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FrmProductAdmin.Designer.cs">
+      <DependentUpon>FrmProductAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\ProductInfoEntity.cs" />
+    <Compile Include="Business\ProductInfoManager.cs" />
+    <Compile Include="Business\ProductInfoTable.cs" />
+    <Compile Include="AppStart.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DemoProduct\FrmDemoProductAdmin.resx">
+      <DependentUpon>FrmDemoProductAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoProduct\FrmDemoProductEdit.resx">
+      <DependentUpon>FrmDemoProductEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHospitalAdmin.resx">
+      <DependentUpon>frmHospitalAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interrogation\FrmInterrogationEdit.resx">
+      <DependentUpon>FrmInterrogationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolDemo\FrmSchoolAdmin.resx">
+      <DependentUpon>FrmSchoolAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolDemo\FrmSchoolEdit.resx">
+      <DependentUpon>FrmSchoolEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderAdmin\FrmEditOrder.resx">
+      <DependentUpon>FrmEditOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderAdmin\FrmOrderAdmin.resx">
+      <DependentUpon>FrmOrderAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Test\FrmFormBindingTest.resx">
+      <DependentUpon>FrmFormBindingTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ProductInfo.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\ExportExcelTest.resx">
+      <DependentUpon>ExportExcelTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTest.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\ReportCommonTool.resx">
+      <DependentUpon>ReportCommonTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\FrmTestDgvSummary.resx">
+      <DependentUpon>FrmTestDgvSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\FrmTestForm.resx">
+      <DependentUpon>FrmTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FrmProductSearch.resx">
+      <DependentUpon>FrmProductSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FrmProductEdit.resx">
+      <DependentUpon>FrmProductEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FrmProductAdmin.resx">
+      <DependentUpon>FrmProductAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ProductInfoEntity.datasource" />
+    <None Include="Properties\DataSources\RDIFrameworkDemo.BizLogic.DemoProductEntity.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\WCFBusinessDBProviderService\BusinessDBProviderService.wsdl" />
+    <None Include="Service References\WCFBusinessDBProviderService\BusinessDBProviderService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\BusinessDBProviderService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\BusinessDBProviderService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\BusinessDBProviderService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\BusinessDBProviderService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\BusinessDBProviderService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ref\Dapper.dll" />
+    <Content Include="ref\DevComponents.DotNetBar2.dll" />
+    <Content Include="ref\DevExpress.BonusSkins.v16.1.dll" />
+    <Content Include="ref\DevExpress.Charts.v16.1.Core.dll" />
+    <Content Include="ref\DevExpress.CodeParser.v16.1.dll" />
+    <Content Include="ref\DevExpress.Data.v16.1.dll" />
+    <Content Include="ref\DevExpress.DataAccess.v16.1.dll" />
+    <Content Include="ref\DevExpress.DataAccess.v16.1.UI.dll" />
+    <Content Include="ref\DevExpress.Diagram.v16.1.Core.dll" />
+    <Content Include="ref\DevExpress.Office.v16.1.Core.dll" />
+    <Content Include="ref\DevExpress.Pdf.v16.1.Core.dll" />
+    <Content Include="ref\DevExpress.Pdf.v16.1.Drawing.dll" />
+    <Content Include="ref\DevExpress.PivotGrid.v16.1.Core.dll" />
+    <Content Include="ref\DevExpress.Printing.v16.1.Core.dll" />
+    <Content Include="ref\DevExpress.RichEdit.v16.1.Core.dll" />
+    <Content Include="ref\DevExpress.Sparkline.v16.1.Core.dll" />
+    <Content Include="ref\DevExpress.Utils.v16.1.dll" />
+    <Content Include="ref\DevExpress.Utils.v16.1.UI.dll" />
+    <Content Include="ref\DevExpress.Xpo.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraBars.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraCharts.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraCharts.v16.1.Extensions.dll" />
+    <Content Include="ref\DevExpress.XtraCharts.v16.1.UI.dll" />
+    <Content Include="ref\DevExpress.XtraCharts.v16.1.Wizard.dll" />
+    <Content Include="ref\DevExpress.XtraDiagram.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraEditors.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraGauges.v16.1.Core.dll" />
+    <Content Include="ref\DevExpress.XtraGrid.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraLayout.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraNavBar.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraPivotGrid.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraPrinting.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraReports.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraReports.v16.1.Extensions.dll" />
+    <Content Include="ref\DevExpress.XtraRichEdit.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraScheduler.v16.1.Core.dll" />
+    <Content Include="ref\DevExpress.XtraScheduler.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraScheduler.v16.1.Reporting.dll" />
+    <Content Include="ref\DevExpress.XtraScheduler.v16.1.Reporting.Extensions.dll" />
+    <Content Include="ref\DevExpress.XtraTreeList.v16.1.dll" />
+    <Content Include="ref\DevExpress.XtraVerticalGrid.v16.1.dll" />
+    <Content Include="ref\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="ref\Microsoft.ReportViewer.WebForms.dll" />
+    <Content Include="ref\RDIFramework.BizLogic.dll" />
+    <Content Include="ref\RDIFramework.Controls.dll" />
+    <Content Include="ref\RDIFramework.ServiceCaller.dll" />
+    <Content Include="ref\RDIFramework.Utilities.dll" />
+    <Content Include="ref\RDIFramework.WinForm.Utilities.dll" />
+    <Content Include="ref\RDIFrameworkDemo.BizLogic.dll" />
+    <Content Include="Resource\print.png" />
+    <None Include="Service References\WCFBusinessDBProviderService\RDIFramework.Test.WCFBusinessDBProviderService.ExecuteNonQuery2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\RDIFramework.Test.WCFBusinessDBProviderService.ExecuteNonQueryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\RDIFramework.Test.WCFBusinessDBProviderService.ExecuteScalar2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\RDIFramework.Test.WCFBusinessDBProviderService.ExecuteScalarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\RDIFramework.Test.WCFBusinessDBProviderService.Fill2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\RDIFramework.Test.WCFBusinessDBProviderService.FillResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WCFBusinessDBProviderService\configuration.svcinfo" />
+    <None Include="Service References\WCFBusinessDBProviderService\configuration91.svcinfo" />
+    <None Include="Service References\WCFDemoProductService\DemoProductService1.wsdl" />
+    <None Include="Service References\WCFDemoProductService\DemoProductService8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFDemoProductService\DemoProductService81.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFDemoProductService\DemoProductService82.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFDemoProductService\DemoProductService83.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFDemoProductService\DemoProductService84.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFDemoProductService\DemoProductService85.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFDemoProductService\DemoProductService86.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFDemoProductService\DemoProductService87.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WCFDemoProductService\RDIFramework.Test.WCFDemoProductService.DemoProductEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WCFDemoProductService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WCFDemoProductService\configuration.svcinfo" />
+    <None Include="Service References\WCFDemoProductService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WCFBusinessDBProviderService\" />
+    <WCFMetadataStorage Include="Service References\WCFDemoProductService\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

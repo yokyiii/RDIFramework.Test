@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="96925b57-0304-4461-996d-ea00aa8d449e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8097/BusinessDBProviderService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BusinessDBProviderService.xsd" MetadataType="Schema" ID="912e3895-fbe2-4501-86df-394748ef8fd1" SourceId="1" SourceUrl="http://localhost:8097/BusinessDBProviderService.svc?xsd=xsd2" />
+    <MetadataFile FileName="BusinessDBProviderService3.xsd" MetadataType="Schema" ID="761f1e41-bd10-412d-b566-da0c67c18b45" SourceId="1" SourceUrl="http://localhost:8097/BusinessDBProviderService.svc?xsd=xsd5" />
+    <MetadataFile FileName="BusinessDBProviderService.wsdl" MetadataType="Wsdl" ID="7381d335-0e40-46cf-a3de-51c3336e7060" SourceId="1" SourceUrl="http://localhost:8097/BusinessDBProviderService.svc?wsdl" />
+    <MetadataFile FileName="BusinessDBProviderService1.xsd" MetadataType="Schema" ID="59a0c497-c458-4c8c-b3ae-846785b9dcb9" SourceId="1" SourceUrl="http://localhost:8097/BusinessDBProviderService.svc?xsd=xsd4" />
+    <MetadataFile FileName="BusinessDBProviderService2.xsd" MetadataType="Schema" ID="22ba24cb-24ec-426a-b702-dc1e04f9a558" SourceId="1" SourceUrl="http://localhost:8097/BusinessDBProviderService.svc?xsd=xsd3" />
+    <MetadataFile FileName="BusinessDBProviderService4.xsd" MetadataType="Schema" ID="06b3b935-4425-4272-b759-67ff17e0f0a9" SourceId="1" SourceUrl="http://localhost:8097/BusinessDBProviderService.svc?xsd=xsd0" />
+    <MetadataFile FileName="BusinessDBProviderService5.xsd" MetadataType="Schema" ID="b0ddff0c-5da8-44ff-bc7f-5943afacd0fc" SourceId="1" SourceUrl="http://localhost:8097/BusinessDBProviderService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
